@@ -1,0 +1,16 @@
+{
+  "name": "Paywhoops!",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Paywhoops! is a Firefox extension that removes paywalls, granting free access to premium content online without restrictions.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-web-extension": "^4.0.0",
+    "webextension-polyfill": "^0.10.0"
+  }
+}
