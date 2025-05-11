@@ -1,0 +1,9 @@
+# lock files
+package-lock.json
+yarn.lock
+
+# node
+node_modules
+
+# dist folder
+dist

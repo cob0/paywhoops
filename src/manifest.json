@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "Paywhoops!",
+  "description": "Paywhoops! is a Firefox extension that removes paywalls, granting free access to content online without restrictions.",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "icon/16.png",
+    "32": "icon/32.png",
+    "48": "icon/48.png",
+    "96": "icon/96.png",
+    "128": "icon/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "paywhoops.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
