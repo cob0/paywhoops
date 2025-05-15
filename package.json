@@ -21,9 +21,15 @@
   "type": "module",
   "private": false,
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c",
-    "clean": "rm -rf dist && rm -f *.zip"
+    "build": "npm run build:clean && npm run build:check && npm run rollup:build && npm run build:check:extension",
+    "build:check": "npm run check:dev",
+    "build:check:extension": "npm run check:extension",
+    "build:clean": "rm -rf dist && rm -f *.zip",
+    "check:dev": "npx @biomejs/biome check --write src/",
+    "check:extension": "web-ext lint -s dist",
+    "dev": "npm run check:dev && npm run rollup:dev",
+    "rollup:build": "rollup -c",
+    "rollup:dev": "rollup -c -w"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -34,7 +40,8 @@
     "@rollup/plugin-typescript": "12.1.2",
     "@types/node": "22.15.17",
     "rollup": "2.79.2",
-    "rollup-plugin-copy": "3.5.0"
+    "rollup-plugin-copy": "3.5.0",
+    "web-ext": "8.6.0"
   },
   "files": [
     "dist"
