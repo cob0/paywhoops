@@ -5,5 +5,7 @@ yarn.lock
 # node
 node_modules
 
-# dist folder
+# dist
 dist
+*.zip
+*.xpi
