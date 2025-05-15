@@ -22,7 +22,8 @@
   "private": false,
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "clean": "rm -rf dist && rm -f *.zip"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",
