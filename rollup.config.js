@@ -2,6 +2,7 @@ import nodeResolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
 import copy from "rollup-plugin-copy";
+import json from "@rollup/plugin-json";
 
 const production = !process.env.ROLLUP_WATCH
 if (production) process.env.NODE_ENV = "production"
@@ -28,6 +29,7 @@ export default {
       browser: true,
       preferBuiltins: false
     }),
+    json(),
     commonjs(),
     copy({
       targets: [

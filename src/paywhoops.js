@@ -1,12 +1,12 @@
-import { Resolver } from "./modules/resolver.js";
+import { WebRequestHelper } from "./modules/web-request-helper.js";
 
-const waitForDocumentReady = () =>
-	new Promise((resolve) => {
-		document.addEventListener("readystatechange", (event) => {
-			if (event.target.readyState === "complete") {
-				resolve(Resolver.resolvers);
-			}
-		});
-	});
-
-waitForDocumentReady().then((resolvers) => resolvers.forEach((fn) => fn()));
+browser?.webRequest?.onBeforeRequest?.addListener(
+	(details) => {
+		if (WebRequestHelper.isHostBlocked(details.url)) {
+			console.log(`blocked: ${details.url}`);
+			return { cancel: true };
+		}
+	},
+	{ urls: ["<all_urls>"] },
+	["blocking"],
+);

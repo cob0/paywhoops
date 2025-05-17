@@ -1,0 +1,32 @@
+{
+	"allowUrls": [],
+	"blockUrls": [
+		"^https?://(www\\.)?sdk\\.privacy\\-center\\.org/.*.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.fastcmp\\.com/.*.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.prisa\\.com/.*pmuser.min.js(\\?.*)?",
+		"^https?://(www\\.)?cmp\\.prisa\\.com/.*cmp_ep.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.prisa\\.com/.*pmfraud.min.js(\\?.*)?",
+		"^https?://(www\\.)?elpais\\.com/.*p.min.js(\\?.*)?",
+		"^https?://(www\\.)?estaticos\\-cdn\\.elperiodico\\.com/.*extra.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*vam.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*voonto.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*vtm.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*rtim.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*accessctrl.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*ev-em.min.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*loader.js(\\?.*)?",
+		"^https?://(www\\.)?static\\.vocstatic\\.com/.*most\\-read.js(\\?.*)?",
+		"^https?://(www\\.)?lavozdegalicia.es/.*apw.js(\\?.*)?",
+		"^https?://(www\\.)?js.lavdg.com/.*master.*.js(\\?.*)?",
+		"^https?://(www\\.)?js.lavdg.com/.*consentads.*.js(\\?.*)?",
+		"^https?://(www\\.)?js.lavdg.com/.*dt_news.*.js(\\?.*)?",
+		"^https?://(www\\.)?diariodenavarra\\.es/.*xalok.*.js(\\?.*)?",
+		"^https?://(www\\.)?diariodenavarra\\.es/.*my-articles.*.js(\\?.*)?",
+		"^https?://(www\\.)?cdns\\.gigya\\.com/.*gigya.*.js(\\?.*)?",
+		"^https?://(www\\.)?s1static\\.ara\\.cat/.*gdpr_simple.*.js(\\?.*)?",
+		"^https?://(www\\.)?diariocordoba\\.com/.*prensaiberica\\-es.*.js(\\?.*)?",
+		"^https?://(www\\.)?diariocordoba\\.com/.*fourty\\-js\\-modal.*.js(\\?.*)?",
+		"^https?://(www\\.)?cdn\\.opencmp\\.net/.*cmp\\-stub\\-latest.*.js(\\?.*)?",
+		"^https?://(www\\.)?cdn\\.opencmp\\.net/.*cmp\\-latest.*.js(\\?.*)?"
+	]
+}
