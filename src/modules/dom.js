@@ -1,4 +1,4 @@
-export const DOM = () => {
+export const DOM = (() => {
 	const getElementsByIds = (elements, ids) =>
 		[...elements].filter((element) => ids.includes(element.id));
 
@@ -57,4 +57,4 @@ export const DOM = () => {
 		removeElementsStyleProperties,
 		removeElementStyleProperties,
 	};
-};
+})();

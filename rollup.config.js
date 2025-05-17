@@ -1,5 +1,4 @@
 import nodeResolve from "@rollup/plugin-node-resolve";
-import terser from "@rollup/plugin-terser";
 import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
 import copy from "rollup-plugin-copy";
@@ -42,7 +41,7 @@ export default {
         }
       ]
     }),
-    terser({maxWorkers: 8, compress: true,})
+    //terser({maxWorkers: 8, compress: true,})
   ],
   watch: {
     clearScreen: true,

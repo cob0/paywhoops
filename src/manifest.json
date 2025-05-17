@@ -17,5 +17,10 @@
 			"js": ["paywhoops.esm.js"],
 			"run_at": "document_end"
 		}
-	]
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "dac45488c8da97defe04f8bf2d874809eec69cdb@paywhoops"
+		}
+	}
 }
